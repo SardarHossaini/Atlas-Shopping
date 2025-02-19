@@ -3,11 +3,16 @@ module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
     extend: {
-      colors: {
-        secondary: "#888883",
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
       },
-      fontSize: {
-        "10xl": "20rem",
+      colors: {
+        primary: "#1a202c",
+        "primary-light": "#2d3748",
+        "primary-dark": "#0f141a",
+      },
+      screens: {
+        xs: "480px",
       },
     },
   },
