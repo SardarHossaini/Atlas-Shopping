@@ -16,29 +16,133 @@
     <title>Home | Atlas Shopping</title>
   </head>
   <body>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">اسلاید ۱</div>
-        <div class="swiper-slide">اسلاید ۲</div>
-        <div class="swiper-slide">اسلاید ۳</div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
+    <!-- MARK: Navigation bar -->
+    <nav class="bg-white shadow-lg">
+      <div
+        class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8"
+      >
+        <!-- Logo -->
+        <a
+          href="./index.html"
+          class="font-bold text-xl text-primary select-none"
+          >Atlas Shop</a
+        >
 
-    <script>
-      var swiper = new Swiper(".swiper", {
-        loop: true,
-        pagination: { el: ".swiper-pagination", clickable: true },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+        <!-- Search bar (hidden on mobile) -->
+        <div class="hidden md:block">
+          <input
+            type="text"
+            placeholder="Search products ..."
+            class="rounded-lg w-60 border border-gray-300 p-2"
+          />
+        </div>
+
+        <!-- NavLinks (hidden on mobile) -->
+        <div class="hidden gap-4 text-gray-700 md:flex">
+          <a
+            href="./index.html"
+            class="hover:font-medium hover:text-primary hover:underline"
+            >Home</a
+          >
+          <a
+            href="./product.html"
+            class="hover:font-medium hover:text-primary hover:underline"
+            >Shop</a
+          >
+          <a
+            href="./About.html"
+            class="hover:font-medium hover:text-primary hover:underline"
+            >About</a
+          >
+          <a
+            href="./contact.html"
+            class="hover:font-medium hover:text-primary hover:underline"
+            >Contact</a
+          >
+        </div>
+
+        <!-- User Icon & Cart Icon -->
+        <div class="flex items-center gap-4 text-gray-700">
+          <!-- User Profile -->
+          <div class="group relative">
+            <!-- User Icon -->
+            <button class="w-6 h-6 hover:text-primary">
+              <i class="fa-user fa-regular"></i>
+            </button>
+            <div
+              class="pointer-events-none absolute -right-2 top-full translate-y-2 rounded-lg border-2 bg-white shadow-inner opacity-0 duration-500 group-hover:opacity-100 group-hover:-translate-y-1 group-hover:pointer-events-auto"
+            >
+              <a
+                href="./login.html"
+                class="block px-6 py-2 hover:bg-slate-200/70"
+                >Login</a
+              >
+              <a
+                href="./wishlist.html"
+                class="block px-6 py-2 hover:bg-slate-200/70"
+                >Wishlist</a
+              >
+              <a
+                href="./dashboard.html"
+                class="block px-6 py-2 hover:bg-slate-200/70"
+                >Dashboard</a
+              >
+              <a
+                href="./order-history.html"
+                class="block px-6 py-2 hover:bg-slate-200/70"
+                >Orders</a
+              >
+              <a
+                href="./user-account.html"
+                class="block px-6 py-2 hover:bg-slate-200/70"
+                >Account</a
+              >
+            </div>
+          </div>
+          <!-- cart icon -->
+          <a href="./cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+
+          <!-- menu button -->
+          <button
+            class="w-6 h-6 hover:text-primary focus:outline-none md:hidden"
+            id="menu-toggle"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="max-h-0 overflow-hidden border-t border-x-gray-200 bg-white duration-500 md:hidden"
+        id="mobile-menu"
+      >
+        <a
+          href="./index.html"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Home</a
+        >
+        <a
+          href="./product.html"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Shop</a
+        >
+        <a
+          href="./About.html"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >About</a
+        >
+        <a
+          href="./contact.html"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Contact</a
+        >
+      </div>
+    </nav>
 
     <!-- Swiper Script file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
