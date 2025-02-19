@@ -534,6 +534,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -628,31 +662,18 @@ video {
   --home: #rrr;
 }
 
-.hover\:bg-sky-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 105 161 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-sky-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(2 132 199 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-sky-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 105 161 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
-}
-
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.focus\:outline-dashed:focus {
-  outline-style: dashed;
-}
-
-.focus\:outline-sky-500:focus {
-  outline-color: #0ea5e9;
 }
 
 .focus\:outline-sky-400:focus {

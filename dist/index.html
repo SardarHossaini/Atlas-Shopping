@@ -4,52 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+    />
+    <!-- Main CSS -->
     <link rel="stylesheet" href="output.css" />
+    <!-- Title -->
+    <title>Home | Atlas Shopping</title>
   </head>
-  <body class="min-h-screen content-center">
-    <form action="" class="max-w-sm mx-auto space-y-6">
-      <div>
-        <input
-          minlength="7"
-          type="text"
-          placeholder="Username"
-          class="peer w-full border border-slate-300 px-3 py-2 rounded-lg focus:outline-sky-400"
-        />
-        <p class="text-red-500 hidden peer-invalid:block">
-          Minimum of 6 characters
-        </p>
+  <body>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">اسلاید ۱</div>
+        <div class="swiper-slide">اسلاید ۲</div>
+        <div class="swiper-slide">اسلاید ۳</div>
       </div>
-      <div>
-        <input
-          minlength="8"
-          placeholder="Password"
-          type="password"
-          class="peer w-full border border-slate-300 px-3 py-2 rounded-lg focus:outline-sky-400"
-        />
-        <p class="text-red-500 hidden peer-invalid:block">
-          Minimum of 8 characters
-        </p>
-      </div>
-      <button
-        type="submit"
-        class="w-full bg-sky-500 px-3 py-2 text-white font-semibold rounded-lg hover:bg-sky-700 hover:font-bold"
-      >
-        Submit
-      </button>
-    </form>
-    <div
-      class="space-y-6 max-w-sm mx-auto mt-6 text-slate-600 hover:bg-sky-600"
-    >
-      <h3 class="font-bold">This is a Heading</h3>
-      <p class="text-justify">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-        odit deserunt reprehenderit fugit omnis tempora nulla impedit veniam
-        velit ipsa veritatis voluptate modi ratione vitae, exercitationem fugiat
-        vel, reiciendis porro harum cum vero minus earum ducimus fuga? Dolore
-        iste ratione consectetur, expedita distinctio vel, hic molestiae
-        doloremque nisi odio est.
-      </p>
-      <button>Hover me <span>Yah! I'm here...</span></button>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        loop: true,
+        pagination: { el: ".swiper-pagination", clickable: true },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- Swiper Script file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
   </body>
 </html>
