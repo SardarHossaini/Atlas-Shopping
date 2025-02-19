@@ -4,16 +4,13 @@
 @tailwind utilities;
 
 @layer utilities {
-  #hero-bg {
-    height: 93vh;
+  #hero {
+    background-image: url("images/hero-background2.jpg");
+    min-height: 93vh;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.25);
-  }
-  #hero {
-    background-image: url("images/hero-background2.jpg");
-    background-size: cover;
   }
   .max-container {
     margin-left: auto;
