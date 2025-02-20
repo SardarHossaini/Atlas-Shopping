@@ -1,5 +1,3 @@
-import Swiper from "swiper";
-import "swiper/css"; // Import Swiper CSS
 const menu = document.getElementById("mobile-menu");
 const menuToggle = document.getElementById("menu-toggle");
 
