@@ -5,20 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
-      integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="
-https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.css
-"
-      rel="stylesheet"
-    />
     <!-- Main CSS -->
     <link rel="stylesheet" href="output.css" />
     <!-- Title -->
@@ -150,6 +136,60 @@ https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.css
       </div>
     </nav>
 
+    <div class="max-container gap-8 py-12 md:flex">
+      <!-- MARK: Sidebar filter -->
+      <aside class="mb-8 md:w-1/4 xl:w-1/5">
+        <h3 class="mb-4 text-xl font-semibold text-gray-800">Filters</h3>
+        <!-- Catagory filter -->
+        <div class="mb-6">
+          <h4 class="mb-3 text-lg font-medium text-gray-700">Catagory</h4>
+          <ul class="space-y-2">
+            <li class="text-gray-600 hover:text-gray-900">
+              <a href="#">Women's Clothing</a>
+            </li>
+            <li class="text-gray-600 hover:text-gray-900">
+              <a href="#">Men's Clothing</a>
+            </li>
+            <li class="text-gray-600 hover:text-gray-900">
+              <a href="#">Accessories</a>
+            </li>
+            <li class="text-gray-600 hover:text-gray-900">
+              <a href="#">Shoes</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Price filter -->
+        <div class="mb-6">
+          <h4 class="mb-3 text-lg font-medium text-gray-700">Price</h4>
+          <input type="range" class="w-full" min="0" max="500" step="10" />
+          <div class="mb-2 flex justify-between text-sm text-gray-600">
+            <span>$0</span><span>$5000</span>
+          </div>
+        </div>
+
+        <!-- color filter -->
+        <div class="mb-6">
+          <h4 class="mb-3 text-lg font-medium text-gray-700">Color</h4>
+          <div class="flex gap-2">
+            <button
+              class="w-6 h-6 rounded-full border border-gray-200 bg-red-500"
+            ></button>
+            <button
+              class="w-6 h-6 rounded-full border border-gray-200 bg-blue-500"
+            ></button>
+            <button
+              class="w-6 h-6 rounded-full border border-gray-200 bg-green-500"
+            ></button>
+            <button
+              class="w-6 h-6 rounded-full border border-gray-200 bg-yellow-500"
+            ></button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MARK: Products listings -->
+    </div>
+
     <!-- MARK: Footer -->
     <footer class="bg-gray-900 py-16 text-white">
       <div class="max-container">
@@ -237,16 +277,6 @@ https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.css
       </div>
     </footer>
 
-    <!-- Swiper Script file -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
-      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.js
-"></script>
     <script src="app.js"></script>
   </body>
 </html>
