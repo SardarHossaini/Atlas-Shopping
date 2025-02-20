@@ -8,7 +8,16 @@
     <!-- Swiper CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+      integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.css
+"
+      rel="stylesheet"
     />
     <!-- Main CSS -->
     <link rel="stylesheet" href="output.css" />
@@ -383,8 +392,169 @@
       </div>
     </section>
 
+    <!-- MARK: Testimonial section -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-container">
+        <h2 class="text-center text-3xl font-bold text-gray-800 md:text-4xl">
+          What Our Customers Say
+        </h2>
+
+        <!-- Swiper.js -->
+        <div class="relative px-8 md:px-10">
+          <div class="swiper-container mt-8 overflow-hidden py-10">
+            <div class="swiper-wrapper">
+              <!-- testimonial slide 1 -->
+              <div
+                class="swiper-slide rounded-lg bg-white p-6 text-gray-600 shadow-lg"
+              >
+                <p>
+                  "Urban Trends has transformed my wardrobe with its stylish and
+                  comfortable clothing. The quality is exceptional, and I always
+                  get compliments on my outfits!"
+                </p>
+                <div class="mt-4 flex items-center">
+                  <img
+                    src="images/avatar-1.jpg"
+                    alt="user 1"
+                    class="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div class="ml-3">
+                    <p class="font-semibold text-gray-800">John Doe</p>
+                    <p class="text-gray-500">Fashion Enthusiast</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- testimonial slide 2 -->
+              <div
+                class="swiper-slide rounded-lg bg-white p-6 text-gray-600 shadow-lg"
+              >
+                <p>
+                  "The designs and quality of Urban Trends' clothing are
+                  top-notch. I've had a fantastic experience shopping here, and
+                  the pieces are always on-trend!"
+                </p>
+                <div class="mt-4 flex items-center">
+                  <img
+                    src="./public/images/avatar-2.jpg"
+                    alt="user 2"
+                    class="size-12 rounded-full object-cover"
+                  />
+                  <div class="ml-3">
+                    <p class="font-semibold text-gray-800">Emily Johnson</p>
+                    <p class="text-gray-500">Frequent Shopper</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- testimonial slide 3 -->
+              <div
+                class="swiper-slide rounded-lg bg-white p-6 text-gray-600 shadow-lg"
+              >
+                <p>
+                  "I am consistently impressed with Urban Trends. Their clothing
+                  is both stylish and durable. Every item I purchase is a
+                  perfect addition to my wardrobe!"
+                </p>
+                <div class="mt-4 flex items-center">
+                  <img
+                    src="./public/images/avatar-3.png"
+                    alt="user 3"
+                    class="size-12 rounded-full object-cover"
+                  />
+                  <div class="ml-3">
+                    <p class="font-semibold text-gray-800">John Smith</p>
+                    <p class="text-gray-500">Style Blogger</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- testimonial slide 4 -->
+              <div
+                class="swiper-slide rounded-lg bg-white p-6 text-gray-600 shadow-lg"
+              >
+                <p>
+                  "Urban Trends offer an excellent range of fashionable clothing
+                  that fits well and looks great. I appreciate the stylish
+                  designs and fast delivery service!"
+                </p>
+                <div class="mt-4 flex items-center">
+                  <img
+                    src="./public/images/avatar-4.png"
+                    alt="user 4"
+                    class="size-12 rounded-full object-cover"
+                  />
+                  <div class="ml-3">
+                    <p class="font-semibold text-gray-800">Sarah Brown</p>
+                    <p class="text-gray-500">Satisfied Customer</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- testimonial slide 5 -->
+              <div
+                class="swiper-slide rounded-lg bg-white p-6 text-gray-600 shadow-lg"
+              >
+                <p>
+                  "Shopping at Urban Trends has been a pleasure. Their clothing
+                  collection is both modern and comfortable, with fantastic
+                  quality and fit. Highly recommend!"
+                </p>
+                <div class="mt-4 flex items-center">
+                  <img
+                    src="./public/images/avatar-5.png"
+                    alt="user 5"
+                    class="size-12 rounded-full object-cover"
+                  />
+                  <div class="ml-3">
+                    <p class="font-semibold text-gray-800">Chris Lee</p>
+                    Loyal Buyer
+                  </div>
+                </div>
+              </div>
+
+              <!-- testimonial slide 6 -->
+              <div
+                class="swiper-slide rounded-lg bg-white p-6 text-gray-600 shadow-lg"
+              >
+                <p>
+                  "Urban Trends provides excellent clothing that stands out. The
+                  quality and style of their garments are top-tier, making it my
+                  first choice for new outfits!"
+                </p>
+                <div class="mt-4 flex items-center">
+                  <img
+                    src="./public/images/avatar-6.png"
+                    alt="user 6"
+                    class="size-12 rounded-full object-cover"
+                  />
+                  <div class="ml-3">
+                    <p class="font-semibold text-gray-800">Alex Green</p>
+                    <p class="text-gray-500">Happy Shopper</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- swiper pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- swiper navigation -->
+            <div class="swiper-button-next text-gray-600"></div>
+            <div class="swiper-button-prev text-gray-600"></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Swiper Script file -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.js
+"></script>
     <script src="app.js"></script>
   </body>
 </html>

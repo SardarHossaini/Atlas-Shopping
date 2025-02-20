@@ -1,3 +1,5 @@
+import Swiper from "swiper";
+import "swiper/css"; // Import Swiper CSS
 const menu = document.getElementById("mobile-menu");
 const menuToggle = document.getElementById("menu-toggle");
 
@@ -20,3 +22,46 @@ menuToggle.addEventListener("click", function () {
     }
   })
 );
+
+// Initialize swipper.js in home page
+if (isHomePage()) {
+  new Swiper(".swiper-container", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    grabCursor: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+}
+
+// Initialize swipper.js in product-details page
+if (window.location.pathname.includes("product-details")) {
+  const thumbsSwiper = new Swiper(".thumbs-container", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+  });
+  new Swiper(".swiper-container", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 20,
+    grabCursor: true,
+    thumbs: {
+      swiper: thumbsSwiper,
+    },
+  });
+}
