@@ -697,6 +697,10 @@ video {
   height: 5rem;
 }
 
+.h-40{
+  height: 10rem;
+}
+
 .max-h-0{
   max-height: 0px;
 }
@@ -727,6 +731,10 @@ video {
 
 .w-16{
   width: 4rem;
+}
+
+.w-40{
+  width: 10rem;
 }
 
 .max-w-screen-xl{
@@ -928,9 +936,19 @@ video {
   background-position: center;
 }
 
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-2{
