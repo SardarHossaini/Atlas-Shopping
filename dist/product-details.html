@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <!-- Swiper CSS -->
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.css
+"
+      rel="stylesheet"
+    />
     <!-- Main CSS -->
     <link rel="stylesheet" href="output.css" />
     <!-- Title -->
@@ -136,6 +143,68 @@
       </div>
     </nav>
 
+    <!-- Product section -->
+    <section class="max-container py-12">
+      <div class="flex flex-col gap-8 md:flex-row">
+        <!-- product image carousel -->
+        <div class="md:w-2/5">
+          <!-- Swiper -->
+          <div class="swiper-container mb-4 overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="images/classic-leather-jacket.jpg"
+                  alt="Classic Leather Jacket"
+                  class="w-full"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/classic-leather-jacket-1.jpg"
+                  alt="Classic Leather Jacket"
+                  class="w-full"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/classic-leather-jacket-2.jpg"
+                  alt="Classic Leather Jacket"
+                  class="w-full"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Thumbnails container -->
+          <div class="thumbs-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="images/classic-leather-jacket.jpg"
+                  alt="Classic Leather Jacket"
+                  class="w-full h-20 object-cover cursor-pointer"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/classic-leather-jacket-1.jpg"
+                  alt="Classic Leather Jacket"
+                  class="w-full h-20 object-cover cursor-pointer"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/classic-leather-jacket-2.jpg"
+                  alt="Classic Leather Jacket"
+                  class="w-full h-20 object-cover cursor-pointer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- MARK: Footer -->
     <footer class="bg-gray-900 py-16 text-white">
       <div class="max-container">
@@ -222,7 +291,10 @@
         </div>
       </div>
     </footer>
-
+    <!-- Swiper Script file -->
+    <script src="
+https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.js
+"></script>
     <script src="app.js"></script>
   </body>
 </html>
