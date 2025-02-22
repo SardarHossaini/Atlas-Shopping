@@ -653,6 +653,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .block{
   display: block;
 }
@@ -746,6 +750,10 @@ video {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .grid-cols-1{
@@ -982,6 +990,10 @@ video {
   padding-bottom: 8rem;
 }
 
+.pl-\[revert\]{
+  padding-left: revert;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1034,6 +1046,10 @@ video {
 
 .leading-tight{
   line-height: 1.25;
+}
+
+.leading-relaxed{
+  line-height: 1.625;
 }
 
 .text-gray-400{
