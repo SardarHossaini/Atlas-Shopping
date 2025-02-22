@@ -143,7 +143,7 @@ https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.css
       </div>
     </nav>
 
-    <!-- Product section -->
+    <!-- MARK: Product section -->
     <section class="max-container py-12">
       <div class="flex flex-col gap-8 md:flex-row">
         <!-- product image carousel -->
@@ -234,6 +234,64 @@ https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.css
             </button>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- MARK: Customer Reviews -->
+    <section class="max-container py-12">
+      <h3 class="mb-2 text-2xl font-semibold text-gray-800">
+        Customer Reviews
+      </h3>
+
+      <!-- ratings -->
+      <div class="mb-2 flex items-center gap-2">
+        <!-- stars -->
+        <div class="flex items-center text-yellow-500">
+          <span>&starf;</span>
+          <span>&starf;</span>
+          <span>&starf;</span>
+          <span>&starf;</span>
+          <span>&starf;</span>
+        </div>
+        <p class="text-gray-600">4.5/5 (123 reviews)</p>
+      </div>
+      <!-- Reviews -->
+      <div class="space-y-8">
+        <!-- review 1 -->
+        <div class="space-y-2">
+          <h4 class="text-lg font-medium text-gray-800">Great Product!</h4>
+          <p class="text-gray-600">
+            I really loved this product. It met all my expectations and the
+            quality is excellent.
+          </p>
+          <p class="text-sm text-gray-500">- John Doe, 2 days ago</p>
+        </div>
+
+        <!-- review 2 -->
+        <div class="space-y-2">
+          <h4 class="text-lg font-medium text-gray-800">
+            Good value for money!
+          </h4>
+          <p class="text-gray-600">
+            The product offers great value for its price. I would definitely
+            recommend it to others.
+          </p>
+          <p class="text-sm text-gray-500">- Jane Smith, 1 week ago</p>
+        </div>
+      </div>
+
+      <!-- Review input -->
+      <div class="mt-8">
+        <h4 class="mb-2 font-medium text-lg text-gray-800">Write a Review</h4>
+        <textarea
+          rows="6"
+          class="mb-4 w-full max-w-md rounded-md border border-gray-300 p-2"
+        ></textarea>
+        <button
+          class="block rounded-md bg-blue-500 px-6 py-2 text-white duration-300 hover:bg-blue-600"
+        >
+          Submit Review
+        </button>
       </div>
     </section>
 
