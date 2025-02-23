@@ -138,8 +138,8 @@
 
     <!-- MARK: Main content -->
     <main class="max-container py-12">
-      <!-- Billing and Shopping information -->
-      <section class="mb-8 gird gap-8 grid-cols-1 lg:grid-cols-2">
+      <!-- Billing and Shipping information -->
+      <section class="mb-8 grid gap-8 grid-cols-1 lg:grid-cols-2">
         <!-- billing information -->
         <div>
           <h2 class="mb-4 text-2xl font-bold text-gray-800">
@@ -214,7 +214,74 @@
             </div>
           </form>
         </div>
+
+        <!-- Shipping information -->
+        <div>
+          <h2 class="mb-4 text-2xl font-bold text-gray-800">
+            Shipping Information
+          </h2>
+          <form class="space-y-4">
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="same-address"
+                class="w-4 h-4 rounded border-gray-300"
+              />
+              <label for="same-address" class="ml-2 text-sm text-gray-700"
+                >Use same address for shopping</label
+              >
+            </div>
+            <div>
+              <label for="name" class="mb-1 text-sm font-medium text-gray-700"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="w-full rounded-md border border-gray-300 p-2"
+              />
+            </div>
+            <div>
+              <label
+                for="address"
+                class="mb-1 text-sm font-medium text-gray-700"
+                >Address</label
+              >
+              <input
+                type="text"
+                id="address"
+                class="w-full rounded-md border border-gray-300 p-2"
+              />
+            </div>
+            <div class="flex gap-4">
+              <div class="w-1/2">
+                <label for="city" class="mb-1 text-sm font-medium text-gray-700"
+                  >City</label
+                >
+                <input
+                  type="text"
+                  id="city"
+                  class="w-full rounded-md border border-gray-300 p-2"
+                />
+              </div>
+              <div class="w-1/2">
+                <label
+                  for="postalCode"
+                  class="mb-1 text-sm font-medium text-gray-700"
+                  >Postal Code</label
+                >
+                <input
+                  type="text"
+                  id="postalCode"
+                  class="w-full rounded-md border border-gray-300 p-2"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
+
+      <!-- Payment and order summary -->
     </main>
 
     <!-- MARK: Footer -->
