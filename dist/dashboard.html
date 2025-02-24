@@ -137,7 +137,7 @@
 
     <main class="min-h-screen bg-gray-100 py-12">
       <div class="max-container flex flex-col lg:flex-row gap-8">
-        <!-- mini navigation bar -->
+        <!-- MARK: navigation menu -->
         <div class="rounded-md bg-white p-6 shadow-md lg:rounded-none lg:w-1/4">
           <h3 class="mb-4 text-lg font-bold text-gray-800">
             Account Dashboard
@@ -181,6 +181,117 @@
           </ul>
         </div>
         <!-- dashboard content -->
+        <div class="flex-1 rounded-lg shadow-lg p-6 bg-white">
+          <h3 class="mb-4 text-lg font-bold text-gray-800">Hello, Sardar</h3>
+          <!-- MARK: Summary boxies -->
+          <div
+            class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3"
+          >
+            <div class="rounded-lg p-4 bg-teal-600 text-white shadow">
+              <h4 class="text-lg font-bold">Orders</h4>
+              <p class="text-sm">You have 5 Orders</p>
+            </div>
+            <div class="rounded-lg p-4 bg-blue-600 text-white shadow">
+              <h4 class="text-lg font-bold">Wishlist</h4>
+              <p class="text-sm">3 items</p>
+            </div>
+            <div class="rounded-lg p-4 bg-black text-white shadow">
+              <h4 class="text-lg font-bold">Account Details</h4>
+              <p class="text-sm">Manage your details</p>
+            </div>
+          </div>
+          <!-- MARK: Recent Orders -->
+          <div class="mb-8">
+            <h4 class="mb-4 text-lg font-bold text-gray-800">Recent Orders</h4>
+            <div
+              class="overflow-x-auto rounded-lg border border-gray-200 bg-gray-50 p-4"
+            >
+              <table class="w-full text-left text-gray-700">
+                <thead>
+                  <tr class="border-b border-gray-300">
+                    <th class="whitespace-nowrap px-4 py-2">Order Id</th>
+                    <th class="px-4 py-2">Date</th>
+                    <th class="px-4 py-2">Status</th>
+                    <th class="px-4 py-2">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-gray-200">
+                    <td class="whitespace-nowrap px-4 py-2">Order#12345</td>
+                    <td class="whitespace-nowrap px-4 py-2">July 12, 2024</td>
+                    <td class="whitespace-nowrap px-4 text-yellow-600 py-2">
+                      Pending
+                    </td>
+                    <td class="whitespace-nowrap px-4 py-2">$150.00</td>
+                  </tr>
+                  <tr class="border-b border-gray-200">
+                    <td class="whitespace-nowrap px-4 py-2">Order#23456</td>
+                    <td class="whitespace-nowrap px-4 py-2">June 25, 2024</td>
+                    <td class="whitespace-nowrap px-4 text-green-600 py-2">
+                      Completed
+                    </td>
+                    <td class="whitespace-nowrap px-4 py-2">$220.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- MARK: Wishlist preview -->
+          <div>
+            <h4 class="mb-4 text-lg font-bold text-gray-800">Wishlist</h4>
+
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <!-- wishlist item 1 -->
+              <div class="p-4 rounded-lg border border-gray-200 bg-white">
+                <img
+                  src="images/aviator-sunglasses.jpg"
+                  alt="Nike AIR"
+                  class="mb-4 w-full object-cover lg:h-40"
+                />
+                <h5 class="font-medium text-gray-700">Aviator Sunglasses</h5>
+                <p class="text-gray-500">$49.99</p>
+                <button
+                  class="mb-2 w-full rounded-md bg-teal-600 px-4 py-2 text-white"
+                >
+                  Add to Cart
+                </button>
+              </div>
+
+              <!-- wishlist item 2 -->
+              <div class="p-4 rounded-lg border border-gray-200 bg-white">
+                <img
+                  src="images/footwear3.jpg"
+                  alt="Nike AIR"
+                  class="mb-4 w-full object-cover lg:h-40"
+                />
+                <h5 class="font-medium text-gray-700">Nike AIR</h5>
+                <p class="text-gray-500">$79.99</p>
+                <button
+                  class="mb-2 w-full rounded-md bg-teal-600 px-4 py-2 text-white"
+                >
+                  Add to Cart
+                </button>
+              </div>
+
+              <!-- wishlist item 3 -->
+              <div class="p-4 rounded-lg border border-gray-200 bg-white">
+                <img
+                  src="images/accessories.jpg"
+                  alt="Nike AIR"
+                  class="mb-4 w-full object-cover lg:h-40"
+                />
+                <h5 class="font-medium text-gray-700">Accessories</h5>
+                <p class="text-gray-500">$159.99</p>
+                <button
+                  class="mb-2 w-full rounded-md bg-teal-600 px-4 py-2 text-white"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
