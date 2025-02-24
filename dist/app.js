@@ -12,14 +12,15 @@ menuToggle.addEventListener("click", function () {
 
 // close menu with mobile nav-links
 [...menu.children].forEach((el) =>
-  el.addEventListener("click", function () {
-    if (menu.classList.contains("max-h-40")) {
-      menu.classList.replace("max-h-40", "max-h-0");
-    } else {
-      menu.classList.replace("max-h-0", "max-h-40");
-    }
+  el.addEventListener("click", () => {
+    menu.classList.replace("max-h-40", "max-h-0");
   })
 );
+
+function isHomePage() {
+  const path = window.location.pathname.replace(/\/+$/, "");
+  return path === "" || path === "/";
+}
 
 // Initialize swipper.js in home page
 if (isHomePage()) {
@@ -45,6 +46,36 @@ if (isHomePage()) {
       },
     },
   });
+}
+
+// Handle accordion behavior in FAQ page
+if (window.location.pathname.includes("faq")) {
+  function toggleFaq(id) {
+    const faq = document.getElementById(`faq-${id}`);
+    const icon = document.getElementById(`icon-${id}`);
+    const isOpen = !faq.classList.contains("max-h-0");
+    document
+      .querySelectorAll('[id^="faq-"]')
+      .forEach((item) => item.classList.replace("max-h-36", "max-h-0"));
+    document
+      .querySelectorAll('[id^="icon-"]')
+      .forEach((item) => (item.style.transform = ""));
+    if (!isOpen) {
+      faq.classList.replace("max-h-0", "max-h-36");
+      icon.style.transform = "rotate(180deg)";
+    }
+  }
+}
+
+// Form toggle in Login page
+if (window.location.pathname.includes("login")) {
+  document.querySelectorAll(".form-toggle").forEach((el) =>
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.getElementById("login-form").classList.toggle("hidden");
+      document.getElementById("register-form").classList.toggle("hidden");
+    })
+  );
 }
 
 // Initialize swipper.js in product-details page
