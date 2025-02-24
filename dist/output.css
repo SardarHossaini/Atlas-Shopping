@@ -729,6 +729,10 @@ video {
   height: 4rem;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
 .max-h-0{
   max-height: 0px;
 }
@@ -779,6 +783,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 .max-w-md{
@@ -1305,6 +1313,11 @@ video {
 .hover\:bg-teal-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-600:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .hover\:font-medium:hover{
