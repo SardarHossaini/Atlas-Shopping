@@ -733,6 +733,10 @@ video {
   height: 2.5rem;
 }
 
+.h-48{
+  height: 12rem;
+}
+
 .max-h-0{
   max-height: 0px;
 }
@@ -1203,6 +1207,16 @@ video {
   color: rgb(13 148 136 / var(--tw-text-opacity));
 }
 
+.text-red-50{
+  --tw-text-opacity: 1;
+  color: rgb(254 242 242 / var(--tw-text-opacity));
+}
+
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .opacity-0{
   opacity: 0;
 }
@@ -1248,6 +1262,10 @@ video {
 
 .duration-500{
   transition-duration: 500ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 #hero {
@@ -1347,6 +1365,11 @@ video {
 .hover\:text-teal-700:hover{
   --tw-text-opacity: 1;
   color: rgb(15 118 110 / var(--tw-text-opacity));
+}
+
+.hover\:text-red-700:hover{
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
@@ -1465,6 +1488,10 @@ video {
 
   .md\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row{
