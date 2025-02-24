@@ -282,6 +282,109 @@
       </section>
 
       <!-- Payment and order summary -->
+      <section class="mb-8 grid gap-8 grid-cols-1 lg:grid-cols-2">
+        <!-- Payment method -->
+        <div>
+          <h2 class="mb-4 text-2xl font-bold text-gray-800">Payment Method</h2>
+          <form class="space-y-4">
+            <div>
+              <label for="credit" class="mb-1 text-sm font-medium text-gray-700"
+                >Credit/Debit Card</label
+              >
+              <input
+                type="text"
+                id="credit"
+                placeholder="Card Number"
+                class="w-full rounded-md border border-gray-300 p-2"
+              />
+            </div>
+            <div class="flex gap-4">
+              <input
+                type="date"
+                placeholder="MM/YY"
+                class="w-1/2 rounded-md border border-gray-300 p-2"
+              />
+              <input
+                type="text"
+                placeholder="CVV"
+                class="w-1/2 rounded-md border border-gray-300 p-2"
+              />
+            </div>
+            <div>
+              <label
+                for="card-name"
+                class="mb-1 text-sm font-medium text-gray-700"
+                >Name on Card</label
+              >
+              <input
+                type="text"
+                id="card-name"
+                class="w-full rounded-md border border-gray-300 p-2"
+              />
+            </div>
+          </form>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="rounded-md bg-gray-50 p-6 shadow-lg">
+          <h2 class="mb-4 text-2xl font-bold text-gray-800">Order Summary</h2>
+          <div class="space-y-4">
+            <!-- product summary -->
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-4">
+                <img
+                  src="images/aviator-sunglasses.jpg"
+                  alt="aviator-sunglasses"
+                  class="w-16 h-16 rounded-md object-cover"
+                />
+                <div class="">
+                  <h3 class="text-sm font-medium text-gray-800">
+                    Aviator Sunglasses
+                  </h3>
+                  <p class="text-sm text-gray-600">Qty:1</p>
+                </div>
+              </div>
+              <p class="text-sm font-medium text-gray-800">$49.99</p>
+            </div>
+
+            <!-- totals -->
+            <div class="space-y-2 border-t border-gray-200 pt-4">
+              <div
+                class="flex items-center justify-between text-sm font-medium text-gray-600"
+              >
+                <span>Subtotal</span>
+                <span>$49.99</span>
+              </div>
+              <div
+                class="flex items-center justify-between text-sm font-medium text-gray-600"
+              >
+                <span>Shipping</span>
+                <span>$8.00</span>
+              </div>
+              <div
+                class="flex items-center justify-between text-sm font-medium text-gray-600"
+              >
+                <span>Tax</span>
+                <span>$3.99</span>
+              </div>
+              <div
+                class="flex items-center justify-between text-lg font-bold text-gray-600"
+              >
+                <span>Total</span>
+                <span>$61.98</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- place order button -->
+          <button
+            type="submit"
+            class="mt-8 w-full rounded-md bg-teal-600 py-3 font-medium text-center text-white hover:bg-teal-700"
+          >
+            Place Order
+          </button>
+        </div>
+      </section>
     </main>
 
     <!-- MARK: Footer -->
