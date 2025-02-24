@@ -136,6 +136,82 @@
       </div>
     </nav>
 
+    <main
+      class="bg-gray-100 flex min-h-screen items-center justify-center px-4 py-2"
+    >
+      <div class="w-full max-w-md space-y-6 rounded bg-white p-8 shadow">
+        <!-- MARK: Login form -->
+        <form class="space-y-6" id="login-form">
+          <div class="text-center">
+            <h2 class="mb-4 text-2xl font-bold text-gray-800">Welcome Back</h2>
+            <p class="text-gray-600 text-sm">
+              New here?
+              <span
+                class="form-toggle cursor-pointer select-none font-medium text-teal-600 hover:text-teal-700"
+                >Creat Account</span
+              >
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div>
+              <label
+                for="register-email"
+                class="mb-1 block text-sm font-medium text-gray-700"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="register-email"
+                required
+                class="w-full rounded-md border border-gray-300 p-2"
+              />
+            </div>
+            <div>
+              <label
+                for="register-password"
+                class="mb-1 block text-sm font-medium text-gray-700"
+                >Password</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="register-password"
+                required
+                class="w-full rounded-md border border-gray-300 p-2"
+              />
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <label for="register-checkbox" class="flex items-center">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="register-checkbox"
+                class="w-4 h-4 rounded border-gray-300"
+              />
+              <span class="ml-2 select-none text-sm text-gray-600"
+                >Remember Me</span
+              >
+            </label>
+            <a
+              href="#"
+              class="text-sm font-medium text-teal-600 hover:text-teal-700"
+              >Forgot Password?</a
+            >
+          </div>
+          <button
+            type="submit"
+            class="w-full rounded-md bg-teal-600 py-3 text-center font-medium text-white hover:bg-teal-700"
+          >
+            Login
+          </button>
+        </form>
+
+        <!-- MARK: create account form -->
+      </div>
+    </main>
+
     <!-- MARK: Footer -->
     <footer class="bg-gray-900 py-16 text-white">
       <div class="max-container">
