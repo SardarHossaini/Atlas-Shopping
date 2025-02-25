@@ -135,6 +135,80 @@
       </div>
     </nav>
 
+    <main class="min-h-screen bg-gray-100 py-12">
+      <div class="max-container">
+        <section class="rounded-lg bg-white p-8 shadow-lg">
+          <h2 class="mb-6 text-3xl font-semibold text-gray-800">
+            Order #123213
+          </h2>
+
+          <!-- order summary -->
+          <div class="mb-6 text-gray-600">
+            <h3 class="mb-3 text-xl font-semibold text-gray-700">
+              Order summary
+            </h3>
+            <p>Order Date: August 13, 2024</p>
+            <p>Status: <span class="text-green-600 font-semibold">Delivered</span></p>
+            <p>Total Amount: $99.99</p>
+          </div>
+          <!-- Shipping Information -->
+          <div class="mb-6 text-gray-600">
+            <h3 class="mb-3 text-xl font-semibold text-gray-700">
+              Shipping Information
+            </h3>
+            <p>Sardar Hossaini</p>
+            <p>1234 kabul street</p>
+            <p>Springfield, IL 62704</p>
+            <p>Afghanistan</p>
+          </div>
+          <!-- products ordered -->
+           <div class="overflow-x-auto">
+            <h3 class="mb-3 text-xl font-semibold text-gray-700">
+              Products Ordered
+            </h3>
+            <table class="min-w-full border border-gray-200">
+              <thead class="bg-gray-50 font-bold text-left text-sm uppercase tracking-wider text-gray-700">
+                <tr>
+                  <th class="px-6 py-3 font-medium">product</th>
+                  <th class="px-6 py-3 font-medium">quantity</th>
+                  <th class="px-6 py-3 font-medium">price</th>
+                  <th class="px-6 py-3 font-medium">total</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200 text-sm text-gray-700">
+                <tr>
+                  <td class="whitespace-nowrap px-6 py-4">Leather bag</td>
+                  <td class="whitespace-nowrap px-6 py-4">1</td>
+                  <td class="whitespace-nowrap px-6 py-4">$49.99</td>
+                  <td class="whitespace-nowrap px-6 py-4">$49.99</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap px-6 py-4">Fancy Watch</td>
+                  <td class="whitespace-nowrap px-6 py-4">2</td>
+                  <td class="whitespace-nowrap px-6 py-4">$99.99</td>
+                  <td class="whitespace-nowrap px-6 py-4">$99.99</td>
+                </tr>
+              </tbody>
+
+            </table>
+           </div>
+           <!-- Billing Information -->
+          <div class="mb-6 text-gray-600">
+            <h3 class="mb-3 text-xl font-semibold text-gray-700">
+              Billing Information
+            </h3>
+            <p>Payment Method: Credit Card (Visa)</p>
+            <p>Billing Address: Same as Shipping</p>
+          </div>
+          <!-- Action Button -->
+          <div class="flex items-center justify-between sm:justify-end gap-4">
+            <button class="px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-gray-800">Reorder</button>
+            <button class="px-4 py-2 rounded-md bg-teal-600 text-white hover:bg-teal-700">Contact Support</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
     <!-- MARK: Footer -->
     <footer class="bg-gray-900 py-16 text-white">
       <div class="max-container">
