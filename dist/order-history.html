@@ -135,6 +135,160 @@
       </div>
     </nav>
 
+    <main class="min-h-screen bg-gray-100">
+      <div class="max-container py-12">
+        <!-- Order History Section -->
+        <section class="rounded-lg bg-white p-8 shadow-lg">
+          <h2 class="mb-6 text-3xl font-semibold text-gray-800">
+            Order History
+          </h2>
+
+          <!-- Order History Table -->
+          <div class="overflow-x-auto">
+            <table class="min-w-full border border-gray-200">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th
+                    class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider text-gray-700 whitespace-nowrap"
+                  >
+                    order ID
+                  </th>
+                  <th
+                    class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider text-gray-700"
+                  >
+                    date
+                  </th>
+                  <th
+                    class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider text-gray-700"
+                  >
+                    status
+                  </th>
+                  <th
+                    class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider text-gray-700"
+                  >
+                    total
+                  </th>
+                  <th
+                    class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider text-gray-700"
+                  >
+                    actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200 bg-white">
+                <tr>
+                  <td class="whitespace-nowrap px-6 py-4 text-gray-700 text-sm">
+                    123213
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4 text-gray-700 text-sm">
+                    Aug 30, 2024
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4 text-gray-700 text-sm">
+                    <span
+                      class="rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800"
+                      >Delivered</span
+                    >
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4 text-gray-700 text-sm">
+                    $99.99
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">
+                    <a
+                      href="order-details.html"
+                      class="font-medium text text-teal-600 duration-200 hover:text-teal-800"
+                      >View Details</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap px-6 py-4 text-gray-700 text-sm">
+                    983421
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4 text-gray-700 text-sm">
+                    Jul 15, 2024
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4 text-gray-700 text-sm">
+                    <span
+                      class="rounded-full bg-yellow-100 px-2 text-xs font-semibold leading-5 text-yellow-800"
+                      >Processing</span
+                    >
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4 text-gray-700 text-sm">
+                    $79.99
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">
+                    <a
+                      href="order-details.html"
+                      class="font-medium text text-teal-600 duration-200 hover:text-teal-800"
+                      >View Details</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap px-6 py-4 text-gray-700 text-sm">
+                    988231
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4 text-gray-700 text-sm">
+                    Jan 21, 2024
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4 text-gray-700 text-sm">
+                    <span
+                      class="rounded-full bg-red-100 px-2 text-xs font-semibold leading-5 text-red-800"
+                      >Delivered</span
+                    >
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4 text-gray-700 text-sm">
+                    $89.99
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">
+                    <a
+                      href="order-details.html"
+                      class="font-medium text text-teal-600 duration-200 hover:text-teal-800"
+                      >View Details</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- MARK: Pagination -->
+          <div class="mt-6 flex justify-end">
+            <nav
+              class="inline-flex rounded-md font-medium text-gray-500 shadow-md"
+              aria-label="Pagination"
+            >
+              <a
+                href="#"
+                class="rounded-l-md border border-x-gray-300 px-2 py-2 text-sm hover:bg-gray-50"
+                >Pagination</a
+              >
+              <a
+                href="#"
+                class="border-[1px] border-teal-500 px-4 py-2 text-sm bg-teal-50 text-teal-600"
+                >1</a
+              >
+              <a
+                href="#"
+                class="border border-gray-300 px-4 py-2 text-sm hover:bg-gray-50"
+                >2</a
+              >
+              <a
+                href="#"
+                class="border border-gray-300 px-4 py-2 text-sm hover:bg-gray-50"
+                >3</a
+              >
+              <a
+                href="#"
+                class="rounded-r-md border border-x-gray-300 px-2 py-2 text-sm hover:bg-gray-50"
+                >Next</a
+              >
+            </nav>
+          </div>
+        </section>
+      </div>
+    </main>
+
     <!-- MARK: Footer -->
     <footer class="bg-gray-900 py-16 text-white">
       <div class="max-container">
