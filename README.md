@@ -16,6 +16,7 @@ Welcome to my **Atlas Shopping** project.
 - CSS3
 - Tailwind CSS
 - JavaScript
+- PHP
 
 <b>[Live Demo](https://sardar219.github.io/H-Decoration/)</b>
 
