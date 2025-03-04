@@ -18,7 +18,7 @@ Welcome to my **Atlas Shopping** project.
 - JavaScript
 - PHP
 
-<b>[Live Demo](https://sardar219.github.io/H-Decoration/)</b>
+<b>[Live Demo](https://atlasonlineshopping.netlify.app/)</b>
 
 ## Installation
 
