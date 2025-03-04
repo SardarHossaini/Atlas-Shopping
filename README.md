@@ -8,7 +8,7 @@ Welcome to my first php project.
 - Clean and maintainable code
 - Cross-browser compatibility
 - Interactive elements
-- Good desing
+- Good design
 
 ## Technologies Used
 
